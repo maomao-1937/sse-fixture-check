@@ -1,0 +1,14 @@
+[
+  {"args": ["sse_fixture_check.py", "examples/complete.sse", "--json-data", "--format", "json"], "exit": 0},
+  {"args": ["sse_fixture_check.py", "examples/chinese-crlf.sse", "--json-data", "--chunk-size", "1", "--format", "json"], "exit": 0},
+  {"args": ["sse_fixture_check.py", "examples/marker.sse", "--json-data", "--done-marker", "FINISHED", "--require-done"], "exit": 0},
+  {"args": ["sse_fixture_check.py", "examples/truncated.sse", "--json-data"], "exit": 1},
+  {"args": ["sse_fixture_check.py", "examples/nonfinite.sse", "--json-data"], "exit": 1},
+  {"args": ["sse_fixture_check.py", "examples/duplicate-key.sse", "--json-data"], "exit": 1},
+  {"args": ["sse_fixture_check.py", "examples/after-marker.sse", "--json-data", "--done-marker", "FINISHED"], "exit": 1},
+  {"args": ["sse_fixture_check.py", "examples/keepalive-only.sse", "--json-data"], "exit": 1},
+  {"args": ["sse_fixture_check.py", "examples/invalid-utf8.sse", "--format", "json"], "exit": 2},
+  {"args": ["sse_fixture_check.py", "examples/complete.sse", "--require-done"], "exit": 2},
+  {"args": ["sse_fixture_check.py", "examples/complete.sse", "--chunk-size", "65537"], "exit": 2},
+  {"args": ["sse_fixture_check.py", "examples/complete.sse", "--max-events", "1"], "exit": 2}
+]

@@ -1,0 +1,4 @@
+: synthetic keepalive
+
+retry: 2000
+

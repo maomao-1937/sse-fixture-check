@@ -1,0 +1,2 @@
+# These synthetic protocol fixtures intentionally include CRLF and invalid UTF-8.
+examples/* -text

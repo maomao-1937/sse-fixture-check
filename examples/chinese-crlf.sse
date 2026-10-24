@@ -1,0 +1,8 @@
+﻿: synthetic keepalive
+id: sample
+event: update
+
+data: {
+data: "text": "中文"
+data: }
+
